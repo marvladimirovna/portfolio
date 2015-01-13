@@ -13,6 +13,7 @@ a {
 
 .social {
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 .social ul {
@@ -25,6 +26,7 @@ a {
 
 .social ul li {
     display: inline;
+    margin-left: 3px;
 }
 
 .social ul li a {
@@ -38,6 +40,7 @@ a {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-size:0.9em;
 }
 
 a.section {
@@ -45,7 +48,7 @@ a.section {
 }
 
 .section {
-    margin-top: 20px;
+    margin-top: 8px;
     height: 300px;
     color: white;
     font-weight: normal;
@@ -70,7 +73,7 @@ a.section {
 
 .border {
     width: 25px;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,7 +81,7 @@ a.section {
 }
 
 .blackborder {
-   border-bottom: 1px solid black; 
+   border-bottom: 2px solid black; 
 }
 
 .section .title {
@@ -101,6 +104,7 @@ a.section {
 .scrollup {
     margin-top: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .scrollup a {
@@ -137,4 +141,12 @@ a.section {
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+a:hover {
+    color: #282828;
+}
+
+a:visited {
+    color: black;
 }
