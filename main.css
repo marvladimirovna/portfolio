@@ -68,7 +68,7 @@ a.section {
 }
 
 .section.video {
-    background-color: #59769C;
+    background-color: #5d7fab;
 }
 
 .border {
@@ -149,4 +149,9 @@ a:hover {
 
 a:visited {
     color: black;
+}
+
+.videoimage{
+margin-top:20px;
+
 }
