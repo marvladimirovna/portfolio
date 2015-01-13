@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 10px;
 }
 
 a {
@@ -8,6 +9,10 @@ a {
 
 .logo {
     text-align: center;
+}
+
+.social {
+    margin-top: 10px;
 }
 
 .social ul {
@@ -27,6 +32,8 @@ a {
 }
 
 .summary {
+    margin-top: 20px;
+    margin-bottom: 40px;
     width: 33%;
     margin-right: auto;
     margin-left: auto;
@@ -77,7 +84,7 @@ a.section {
 .section .title {
     vertical-align: top;
     margin-top: 120px;
-    width: 45%;
+    width: 48%;
     display: inline-block;
     text-align: center;
     color: white;
@@ -86,9 +93,9 @@ a.section {
 }
 
 .section .image {
-    width: 45%;
+    width: 48%;
     display: inline-block;
-    text-align: center;
+    text-align: right;
 }
 
 .scrollup {
