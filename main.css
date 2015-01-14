@@ -146,6 +146,11 @@ a.section {
     font-variant: small-caps;
 }
 
+.project .description .text a, .project .description .text a:visited {
+    font-variant: small-caps;
+    color: white;
+}
+
 .project .image {
     display: inline-block;
     width: 45%;
@@ -168,11 +173,19 @@ a.section {
     color: #282828;
 }*/
 
+.section .scrollup a, .section .scrollup a:visited {
+    color: white;
+}
+
+.scrollup a {
+    color: black;
+}
+
 .scrollup a:visited {
     color: black;
 }
 
 .videoimage{
-margin-top:20px;
+    margin-top:20px;
 
 }
