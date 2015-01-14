@@ -95,6 +95,15 @@ a.section {
     font-size: 1.1em;
 }
 
+.section.fullwidth {
+    height: auto;
+}
+
+.section.fullwidth .title {
+    width: 100%;
+    margin-top: 20px;
+}
+
 .section .image {
     width: 48%;
     display: inline-block;
@@ -120,11 +129,17 @@ a.section {
     display: none;
 }
 
+
+.project {
+    margin-top: 20px;
+}
+
 .project .description {
     display: inline-block;
     width: 45%;
     vertical-align: top;
     margin-top: 20px;
+    text-align: center;
 }
 
 .project .description .title {
@@ -137,17 +152,22 @@ a.section {
     text-align: center;
 }
 
+.project .text {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .back {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-a:hover {
+/*a:hover {
     color: #282828;
-}
+}*/
 
-a:visited {
+.scrollup a:visited {
     color: black;
 }
 
