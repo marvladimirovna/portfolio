@@ -148,7 +148,6 @@ a.section {
 }
 
 .project .description .text a, .project .description .text a:visited {
-    font-variant: small-caps;
     color: white;
 }
 
@@ -159,8 +158,8 @@ a.section {
 }
 
 .project .text {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-top: 200px;
     
 }
@@ -189,5 +188,14 @@ a.section {
 
 .videoimage{
     margin-top:20px;
+}
 
+.download {
+    margin-top: 20px;
+    display: inline-block;
+    font-variant: small-caps;
+}
+
+a.underline {
+    text-decoration: underline;
 }
