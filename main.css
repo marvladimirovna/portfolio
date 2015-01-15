@@ -4,7 +4,7 @@ body {
 }
 
 img {
-    max-width:100%;
+    max-width:80%;
 }
 
 a {
@@ -250,6 +250,16 @@ a.underline {
 
     .project .image {
         float: none;
+    }
+
+    .project .description .text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project .text {
+        margin-top: 0px;
+        margin-bottom: 60px;
     }
 
 }
