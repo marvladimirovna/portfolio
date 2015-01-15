@@ -36,7 +36,7 @@ a {
 .summary {
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 33%;
+    width: 600px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -205,4 +205,34 @@ a.underline {
 
 #other-sections {
     display: none;
+}
+
+@media (max-width: 600px) {
+    .section .image {
+        display: none
+    }
+
+    .section .title {
+        width: 100%;
+    }
+
+    .summary {
+        width: 70%;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .project .image {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .project .description {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
