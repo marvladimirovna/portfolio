@@ -4,7 +4,7 @@ $(function(){
         event.stopPropagation();
         var curScrollTop = $("body").scrollTop();
         
-        $("html, body").animate({ scrollTop: curScrollTop + 100 }, "slow");
+        $("html, body").animate({ scrollTop: curScrollTop + 100 }, "fast");
         return false;
     });
 });
