@@ -129,7 +129,9 @@ a.section {
 }
 
 .copyright {
+    margin-top: 10px;
     font-size: 0.7em;
+    float: left;
 }
 
 .other_sections {
