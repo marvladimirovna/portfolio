@@ -110,13 +110,13 @@ a.section {
     text-align: right;
 }
 
-.scrollup {
+.scrollup, .seemore {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
 }
 
-.scrollup a {
+.scrollup a, .seemore a {
     text-decoration: none;
     font-variant: small-caps;
 }
@@ -158,8 +158,8 @@ a.section {
 }
 
 .project .text {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
     margin-top: 200px;
     
 }
@@ -174,17 +174,15 @@ a.section {
     color: #282828;
 }*/
 
-.section .scrollup a, .section .scrollup a:visited {
+.seemore a, .seemore a:visited {
     color: white;
 }
 
-.scrollup a {
+.scrollup a, .scrollup a:visited {
     color: black;
 }
 
-.scrollup a:visited {
-    color: black;
-}
+
 
 .videoimage{
     margin-top:20px;
@@ -198,4 +196,9 @@ a.section {
 
 a.underline {
     text-decoration: underline;
+}
+
+.seemore {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
