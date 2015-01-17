@@ -13,6 +13,7 @@ a {
 
 .logo {
     text-align: center;
+    display: block;
 }
 
 .social {
@@ -221,6 +222,14 @@ a.underline {
 
 #other-sections {
     display: none;
+}
+
+.project.fireman {
+    padding-top: 20px;
+}
+
+.project.fireman .text, .project.origamivideo .text, .project.swans .text {
+    margin-top: 100px;
 }
 
 @media (max-width: 600px) {
