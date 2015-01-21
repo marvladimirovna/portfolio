@@ -3,8 +3,8 @@ body {
     margin: 10px;
 }
 
-img {
-    max-width:80%;
+img, iframe {
+    max-width:100%;
 }
 
 a {
@@ -65,6 +65,8 @@ a.section {
 .section.mobile {
     background-color: #92CBC0;
 }
+
+.section.mobile
 
 .section.illustration {
     background-color: #e9ce85;
@@ -148,11 +150,12 @@ a.section {
 
 .project .description {
     display: inline-block;
-    width: 45%;
+    width: 50%;
     vertical-align: top;
     margin-top: 20px;
     text-align: center;
     font-size:0.9em;
+    float: left;
 }
 
 .project .description .title {
@@ -165,8 +168,9 @@ a.section {
 
 .project .image {
     display: inline-block;
-    width: 45%;
+    width: 50%;
     text-align: center;
+    float: left;
 }
 
 .project .image.right {
@@ -232,7 +236,7 @@ a.underline {
     margin-top: 100px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 701px) {
     .section .image {
         display: none
     }
