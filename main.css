@@ -230,6 +230,11 @@ a.underline {
 .seemore {
     padding-top: 40px;
     padding-bottom: 40px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
 }
 
 #other-sections {
