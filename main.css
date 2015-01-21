@@ -171,6 +171,10 @@ a.section {
     float: left;
 }
 
+.project.origami .image img {
+    max-width: 49%;
+}
+
 .project .image.right {
     float: right;
 }
