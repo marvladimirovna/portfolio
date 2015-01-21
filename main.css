@@ -66,8 +66,6 @@ a.section {
     background-color: #92CBC0;
 }
 
-.section.mobile
-
 .section.illustration {
     background-color: #e9ce85;
 }
@@ -178,10 +176,16 @@ a.section {
 }
 
 .project .text {
-    margin-left: 80px;
+/*    margin-left: 80px;
     margin-right: 80px;
+*/    
+
     margin-top: 200px;
-    
+    max-width: 450px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .back {
@@ -259,7 +263,7 @@ a.underline {
     }
 
     .project .description {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -269,8 +273,8 @@ a.underline {
     }
 
     .project .description .text {
-        margin-left: 10px;
-        margin-right: 10px;
+/*        margin-left: 10px;
+        margin-right: 10px;*/
     }
 
     .project .text {
