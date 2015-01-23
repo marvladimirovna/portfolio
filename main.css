@@ -309,16 +309,20 @@ a.underline {
     }
 
     .project .text {
-        margin-top: 0px;
-        margin-bottom: 60px;
+        margin-top: 0px ! important;
+        margin-bottom: 60px ! important;
     }
 
-    .project.fireman .text, .project.origamivideo .text, .project.swans .text {
+    .project.swans .text {
+        margin-bottom: 30px ! important;
+    }
+
+/*    .project.fireman .text, .project.origamivideo .text, .project.swans .text {
         margin-top: 30px;
         margin-bottom: 20px;
     }
 
     .project.fireman .text, .project.origamivideo .text {
         margin-bottom: 100px;
-    }
+    }*/
 }
