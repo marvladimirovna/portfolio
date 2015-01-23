@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+.social ul li a img {
+    width: 20px;
+}
+
 .summary {
     margin-top: 20px;
     margin-bottom: 40px;
