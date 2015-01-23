@@ -279,8 +279,14 @@ a.underline {
     }
 
     .project .image {
-        width: 100%;
+        width: 90%;
         display: inline-block;
+    }
+
+    .project .image img {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project .description {
@@ -293,6 +299,10 @@ a.underline {
         float: none;
     }
 
+    .project .image.right {
+        float: none;
+    }
+
     .project .description .text {
 /*        margin-left: 10px;
         margin-right: 10px;*/
@@ -302,5 +312,4 @@ a.underline {
         margin-top: 0px;
         margin-bottom: 60px;
     }
-
 }
