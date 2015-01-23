@@ -42,6 +42,14 @@ a {
     width: 20px;
 }
 
+.social ul li:nth-child(1) a img {
+    width: 18px;
+}
+
+.social ul li:nth-child(2) a img {
+    width: 15px;
+}
+
 .summary {
     margin-top: 20px;
     margin-bottom: 40px;
