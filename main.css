@@ -315,9 +315,10 @@ a.underline {
 
     .project.fireman .text, .project.origamivideo .text, .project.swans .text {
         margin-top: 30px;
+        margin-bottom: 20px;
     }
 
-    .project.fireman .text, .project.origamivideo .text, .project.swans .text {
+    .project.fireman .text, .project.origamivideo .text {
         margin-bottom: 100px;
     }
 }
