@@ -19,26 +19,24 @@
         <link rel="stylesheet" type="text/css" href="simple-sidebar.css">
     </head>
     <body>
-        <div id="wrapper">
+        <div id="wrapper" class="toggled">
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                        <a href="#">
-                            Start Bootstrap
-                        </a>
+                    <li>
+                        <a href="#mobile" class="select-tag" data-select-tag="all">All</a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="#mobile" class="select-tag" data-select-tag="mobile">Mobile</a>
                     </li>
                     <li>
-                        <a href="#">Shortcuts</a>
+                        <a href="#web" class="select-tag" data-select-tag="web">Web</a>
                     </li>
                     <li>
-                        <a href="#">Overview</a>
+                        <a href="#infographics" class="select-tag" data-select-tag="infog">Infographics</a>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                        <a href="#illustration" class="select-tag" data-select-tag="illu">Illustration</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -96,35 +94,33 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 tagged tag-mobile tag-all">
                         <a href="#" class="thumbnail">
+                            <img src="images/chew.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 tagged tag-web tag-all">
+                        <a href="#" class="thumbnail">
+                            <img src="images/hyperloop_1.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 tagged tag-infog tag-all">
+                        <a href="#" class="thumbnail">
+                            <img src="images/info_1.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 tagged tag-infog tag-all">
+                        <a href="#" class="thumbnail">
+                            <img src="images/info_2.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail tagged tag-illu tag-all">
                             <img src="bird.png" />
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                            <img src="bird.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                            <img src="bird.png" />
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                            <img src="bird.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                            <img src="bird.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="thumbnail">
+                        <a href="#" class="thumbnail tagged tag-illu tag-all">
                             <img src="bird.png" />
                         </a>
                     </div>
@@ -165,6 +161,12 @@
                 e.preventDefault();
                 $("#wrapper").toggleClass("toggled");
             });
+
+            $(".select-tag").click(function(e){
+                var tag = $(this).data("select-tag");
+                $(".tagged").hide();
+                $(".tag-" + tag).show();
+            })
         </script>
 
     </body>
