@@ -16,124 +16,120 @@
         </script>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="simple-sidebar.css">
     </head>
     <body>
-        <a href="index.html" class="logo">
-             <img src="logo2.png" width="150px" />   
-        </a>
-        <div class="social">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/mariyayukhimenko" onclick="trackOutboundLink('https://www.linkedin.com/in/mariyayukhimenko'); return false;">
-                        <img src="in2.png" />
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:marvladimirovna@gmail.com" onclick="trackOutboundLink('mailto:marvladimirovna@gmail.com'); return false;">
-                        <img src="email2.png" />
-                    </a>
-                
-                </li>
-                <li>
-                    <a href="https://www.behance.net/mariya_yukhimenko" onclick="trackOutboundLink('https://www.behance.net/mariya_yukhimenko'); return false;">
-                        <img src="behance2.png" />
-                    </a>
-                
-                </li>
-                <li>
-                    <a href="http://society6.com/mariyayukhimenko" onclick="trackOutboundLink('http://society6.com/mariyayukhimenko'); return false;">
-                        <img src="s62.png" />
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Start Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Shortcuts</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="summary">
-            Hello, my name is Mariya Yukhimenko and I am a design grad student with a background in journalism. I am focused on mobile, illustration and data visualization design.
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="thumbnail">
-                        <img src="bird.png" />
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <a class="section mobile" href="mobile.html">
-            <div class="title">
-                mobile
-                <span class="border"></span>
-            </div>
-            <div class="image">
-                <img src="mobile.png" />
-            </div>
-        </a>
-
-        <a class="section illustration" href="illustration.html">
-            <div class="title">
-                illustration
-                <span class="border"></span>
-            </div>
-            <div class="image">
-                <img src="mouse.png" />
-            </div>
-        </a>
-
-        <a class="section infographics" href="infographics.html">
-            <div class="title">
-                infographics
-                <span class="border"></span>
-            </div>
-            <div class="image">
-                <img src="infog.png" />
-            </div>
-        </a>
-
-        <a class="section video" href="video.html">
-            <div class="title">
-                video
-                <span class="border"></span>
-            </div>
-            <div class="image">
-                <img class="videoimage" src="eyes.png" />
-            </div>
-        </a>
-
-        <div class="scrollup">
-            <a href="#">
-                scroll up
+            <a href="index.html" class="logo">
+                 <img src="logo2.png" width="150px" />   
             </a>
-            <span class="border blackborder"></span>
+
+             <button href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                 <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+             </button>
+
+            
+
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mariyayukhimenko" onclick="trackOutboundLink('https://www.linkedin.com/in/mariyayukhimenko'); return false;">
+                            <img src="in2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:marvladimirovna@gmail.com" onclick="trackOutboundLink('mailto:marvladimirovna@gmail.com'); return false;">
+                            <img src="email2.png" />
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/mariya_yukhimenko" onclick="trackOutboundLink('https://www.behance.net/mariya_yukhimenko'); return false;">
+                            <img src="behance2.png" />
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a href="http://society6.com/mariyayukhimenko" onclick="trackOutboundLink('http://society6.com/mariyayukhimenko'); return false;">
+                            <img src="s62.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="summary">
+                Hello, my name is Mariya Yukhimenko and I am a design grad student with a background in journalism. I am focused on mobile, illustration and data visualization design.
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="copyright">
@@ -164,6 +160,11 @@
                  }
                });
             }
+
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
         </script>
 
     </body>
