@@ -1,0 +1,26 @@
+a.thumbnail {
+    border: 0;
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border: 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1110px !important;
+    }
+}
+
+a.thumbnail > img {
+    width: 100%;
+}
+
+.thumbnail {
+    margin-bottom: 0px;
+}
+
+.col-md-4 {
+    padding-right: 0;
+    padding-left: 0;
+}

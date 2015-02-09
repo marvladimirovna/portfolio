@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico">
+        <title>Mariya Yukhimenko portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js" ></script>
+        <script type="text/javascript" src="main.js" ></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+        <script type"text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+        </script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+    </head>
+    <body>
+        <a href="index.html" class="logo">
+             <img src="logo2.png" width="150px" />   
+        </a>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/mariyayukhimenko" onclick="trackOutboundLink('https://www.linkedin.com/in/mariyayukhimenko'); return false;">
+                        <img src="in2.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:marvladimirovna@gmail.com" onclick="trackOutboundLink('mailto:marvladimirovna@gmail.com'); return false;">
+                        <img src="email2.png" />
+                    </a>
+                
+                </li>
+                <li>
+                    <a href="https://www.behance.net/mariya_yukhimenko" onclick="trackOutboundLink('https://www.behance.net/mariya_yukhimenko'); return false;">
+                        <img src="behance2.png" />
+                    </a>
+                
+                </li>
+                <li>
+                    <a href="http://society6.com/mariyayukhimenko" onclick="trackOutboundLink('http://society6.com/mariyayukhimenko'); return false;">
+                        <img src="s62.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="summary">
+            Hello, my name is Mariya Yukhimenko and I am a design grad student with a background in journalism. I am focused on mobile, illustration and data visualization design.
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="bird.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a class="section mobile" href="mobile.html">
+            <div class="title">
+                mobile
+                <span class="border"></span>
+            </div>
+            <div class="image">
+                <img src="mobile.png" />
+            </div>
+        </a>
+
+        <a class="section illustration" href="illustration.html">
+            <div class="title">
+                illustration
+                <span class="border"></span>
+            </div>
+            <div class="image">
+                <img src="mouse.png" />
+            </div>
+        </a>
+
+        <a class="section infographics" href="infographics.html">
+            <div class="title">
+                infographics
+                <span class="border"></span>
+            </div>
+            <div class="image">
+                <img src="infog.png" />
+            </div>
+        </a>
+
+        <a class="section video" href="video.html">
+            <div class="title">
+                video
+                <span class="border"></span>
+            </div>
+            <div class="image">
+                <img class="videoimage" src="eyes.png" />
+            </div>
+        </a>
+
+        <div class="scrollup">
+            <a href="#">
+                scroll up
+            </a>
+            <span class="border blackborder"></span>
+        </div>
+
+        <div class="copyright">
+            &#9400; Mariya Yukhimenko 2015
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-58773133-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+        <script>
+            /**
+            * Function that tracks a click on an outbound link in Google Analytics.
+            * This function takes a valid URL string as an argument, and uses that URL string
+            * as the event label.
+            */
+            var trackOutboundLink = function(url) {
+               ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+                 function () {
+                 document.location = url;
+                 }
+               });
+            }
+        </script>
+
+    </body>
+</html>
