@@ -14,8 +14,6 @@
         <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <script type"text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
         </script>
-        <script type"text/javascript" src="/js/grid.js">
-        </script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="/css/grid.css">
         <link rel="stylesheet" type="text/css" href="/css/simple-sidebar.css">
@@ -26,19 +24,19 @@
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li>
-                        <a href="#mobile">All</a>
+                        <a href="/grid.html#all" class="select-tag" data-select-tag="all">All</a>
                     </li>
                     <li>
-                        <a href="#mobile">Mobile</a>
+                        <a href="/grid.html#mobile" class="select-tag" data-select-tag="mobile">Mobile</a>
                     </li>
                     <li>
-                        <a href="#web">Web</a>
+                        <a href="/grid.html#web" class="select-tag" data-select-tag="web">Web</a>
                     </li>
                     <li>
-                        <a href="#infographics">Infographics</a>
+                        <a href="/grid.html#infographics" class="select-tag" data-select-tag="infog">Infographics</a>
                     </li>
                     <li>
-                        <a href="#illustration">Illustration</a>
+                        <a href="/grid.html#illustration" class="select-tag" data-select-tag="illu">Illustration</a>
                     </li>
                 </ul>
             </div>
@@ -82,50 +80,13 @@
             </div>
 
             <div class="summary">
-                Hello, my name is Mariya Yukhimenko and I am a design grad student with a background in journalism. I am focused on mobile, illustration and data visualization design.
+                This is hyperloop description.
             </div>
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 tagged tag-mobile tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/chew.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-web tag-all">
-                        <a href="pages/hyperloop.html" class="thumbnail">
-                            <img src="/images/hyperloop_1.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-infographics tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/info_1.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-infographics tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/info_2.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-illustration tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/bird.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-illustration tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/bunny.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-illustration tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/pixel.png" />
-                        </a>
-                    </div>
-                    <div class="col-md-4 tagged tag-mobile tag-all">
-                        <a href="#" class="thumbnail">
-                            <img src="/images/hockey.png" />
-                        </a>
+                    <div class="col-md-12">
+                        <img src="/images/hyperloop.png" />
                     </div>
                 </div>
             </div>
@@ -159,6 +120,17 @@
                  }
                });
             }
+
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(".select-tag").click(function(e){
+                var tag = $(this).data("select-tag");
+                $(".tagged").hide();
+                $(".tag-" + tag).show();
+            })
         </script>
 
     </body>
