@@ -7,6 +7,7 @@
         <script type="text/javascript" src="main.js" ></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
     </head>
     <body>
         <a href="index.html" class="back">
@@ -45,6 +46,14 @@
          <div class="download_resume">download my
             <a href="http://www.marvladimirovna.com/resume.pdf">resume /</a>
             <a href="http://www.marvladimirovna.com/pdf_portfolio.pdf">portfolio</a>
+        </div>
+        
+         <!--loader-->
+        
+        <div class="loader-inner ball-pulse">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         
         
@@ -140,6 +149,11 @@
             * This function takes a valid URL string as an argument, and uses that URL string
             * as the event label.
             */
+            
+              $(window).load(function() {
+                $(".ball-pulse").hide();
+}); 
+           
             var trackOutboundLink = function(url) {
                ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
                  function () {
