@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js" ></script>
         <script type="text/javascript" src="main.js" ></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -16,6 +17,8 @@
         <a href="index.html" class="logo">
              <img src="logo2.png" width="150px" />   
         </a>
+
+        
         <div class="social">
             <ul>
                 <li>
@@ -42,9 +45,19 @@
                 </li>
             </ul>
         </div>
-
+        <div class="loader-inner ball-pulse">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
         <div class="summary">
             Hello, my name is Mariya Yukhimenko and I am a design grad student with a background in journalism. I am focused on mobile, illustration and data visualization design.
+        </div>
+        
+                <div class="download_resume">download my
+            <a href=>resume /</a>
+            <a href=>portfolio</a>
         </div>
 
         <a class="section mobile" href="mobile.html">
@@ -115,6 +128,10 @@
             * This function takes a valid URL string as an argument, and uses that URL string
             * as the event label.
             */
+            $(window).load(function() {
+    $(".ball-pulse").hide();
+}); 
+            
             var trackOutboundLink = function(url) {
                ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
                  function () {

@@ -3,6 +3,10 @@ body {
     margin: 10px;
 }
 
+.ball-pulse > div {
+  background: aqua ! important;
+}
+
 img, iframe {
     max-width:100%;
 }
@@ -302,10 +306,17 @@ a.underline {
     .project .image.right {
         float: none;
     }
+    
+    .download_resume{
+        position:relative ! important;
+        text-align: right;
+}
 
     .project .description .text {
 /*        margin-left: 10px;
         margin-right: 10px;*/
+        
+        
     }
 
     .project .text {
@@ -326,3 +337,15 @@ a.underline {
         margin-bottom: 100px;
     }*/
 }
+
+.download_resume{
+
+color:#A7A9AC;
+font-size:0.8em! important;
+font-variant: small-caps;
+position:absolute;
+top: 1%;
+right:1%;
+
+}
+
