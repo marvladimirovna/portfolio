@@ -9,6 +9,8 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js" ></script>
+        <script type="text/javascript" src="lib/modernizr/modernizr.js" ></script>
+        <script type="text/javascript" src="lib/shufflejs/dist/jquery.shuffle.js" ></script>
         <script type="text/javascript" src="main.js" ></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -62,6 +64,47 @@
             <a href="http://www.marvladimirovna.com/resume.pdf">resume /</a>
             <a href="http://www.marvladimirovna.com/pdf_portfolio.pdf">portfolio</a>
         </div>
+        
+         <div class="filter-options">
+          <button class="btn btn-default" data-group="wallpaper">Wallpapers</button>
+          <button class="btn btn-default" data-group="graphics">Graphic Design</button>
+          <button class="btn btn-default" data-group="photography">Photos</button>
+          <button class="btn btn-default" data-group="3d">3D Renders</button>
+        </div>    
+        
+<div id="grid" class="row-fluid">
+  <figure class="span3 picture-item" data-groups='["photography"]'>
+    <img src="/img/baseball.png" height="145" width="230" />
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title">Baseball</figcaption>
+      <p class="picture-item__tags">photography</p>
+    </div>
+  </figure>
+  <figure class="span6 picture-item" data-groups='["wallpaper","3d"]'>
+    <img src="/img/tennis-ball.png" height="145" width="230" />
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title">Tennis</figcaption>
+      <p class="picture-item__tags">wallpaper, 3d</p>
+    </div>
+    <p class="picture-item__description">Some description here.</p>
+  </figure>
+  <figure class="span3 picture-item" data-groups='["wallpaper","3d"]'>
+    <img src="/img/imac.png" height="145" width="230" />
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title">iMac</figcaption>
+      <p class="picture-item__tags">wallpaper, 3d</p>
+    </div>
+  </figure>
+  <figure class="span3 picture-item picture-item--h2" data-groups='["graphics"]'>
+    <img src="/img/master-chief.png" height="145" width="230" />
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title">Master Chief</figcaption>
+      <p class="picture-item__tags">graphics</p>
+    </div>
+    <p class="picture-item__description">Some description here.</p>
+  </figure>
+</div>
+        
 
         <a class="section mobile" href="mobile.html">
             <div class="title">
@@ -142,6 +185,22 @@
                  }
                });
             }
+            
+            $(document).ready(function() {
+              var $grid = $('#grid'),
+                  $sizer = $grid.find('.shuffle__sizer');
+
+              $grid.shuffle({
+                itemSelector: '.picture-item',
+                sizer: $sizer
+              });
+
+              $(".filter-options button").click(function() {
+                var grp = $(this).data("group");
+                $grid.shuffle('shuffle', grp);
+              });    
+
+            });
         </script>
 
     </body>
